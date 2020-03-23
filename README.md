@@ -1,2 +1,2 @@
 # DCGAN
-Implementation of DCGAN on MNIST Dataset
+Implementation of DCGAN on the MNIST Dataset
