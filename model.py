@@ -28,4 +28,5 @@ class Generator(nn.Module):
         return self.model(x)
 
 if __name__ == "__main__":
-    pass
+    model = Generator()
+    
