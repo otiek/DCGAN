@@ -9,10 +9,7 @@ tr = transforms.Compose([
 ])
 #download and load MNIST data
 mnist = MNIST('../Dataset', transform=tr, download=True)
-print(type(mnist))
-print(len(mnist))
-data = mnist[0]
-img = data[0]
-num = data[1]
-print(img.size())
-print(num)
+sample_img = mnist[0][0]
+size = sample_img.squeeze().size()
+print('Total samples: {}'.format(len(mnist)))
+print('Image size: {}x{}'.format(size[0], size[1]))
